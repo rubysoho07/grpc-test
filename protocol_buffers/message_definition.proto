@@ -1,0 +1,11 @@
+service YGTestService {
+    rpc SayHello (YGRequest) returns (YGResponse);
+}
+
+message YGRequest {
+    string req_message = 1;
+}
+
+message YGResponse {
+    string res_message = 1;
+}
