@@ -6,3 +6,4 @@ gRPC를 어떻게 사용할 수 있는지 테스트 해 봅니다.
 
 * `golang`: Golang으로 만든 클라이언트, 서버
 * `python`: Python으로 만든 클라이언트, 서버
+* `protocol_buffers`: Protocol Buffer 설정
