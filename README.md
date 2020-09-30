@@ -23,7 +23,22 @@ pip install -r requirements.txt
 python -m grpc_tools.protoc -I../protocol_buffers --python_out=. --grpc_python_out=. ../protocol_buffers/message_definition.proto
 ```
 
-생성된 Python 코드를 가지고 서버와 클라이언트를 만들어야 합니다. `grpc_client.py` 파일과 `grpc_server` 파일을 참고하세요.
+생성된 Python 코드를 가지고 서버와 클라이언트를 만들어야 합니다. `grpc_client.py` 파일과 `grpc_server.py` 파일을 참고하세요.
+
+다음 명령으로 서버를 실행합니다. 
+
+```
+python grpc_server.py
+```
+
+그리고 다른 터미널 창에서 클라이언트를 실행하면, 다음과 같은 메시지가 나옵니다. 
+
+```
+python grpc_client.py
+Response is 'Hello! Your request is Test Message'
+```
+
+서버를 끝내고 싶으면 Ctrl+C를 눌러줍니다. 
 
 ## 참고자료
 
