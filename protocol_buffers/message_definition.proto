@@ -1,3 +1,5 @@
+syntax = "proto3";
+
 service YGTestService {
     rpc SayHello (YGRequest) returns (YGResponse);
 }
